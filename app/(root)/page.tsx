@@ -1,8 +1,15 @@
 
 
-export default function Home() {
-    return (
-        <p>hello admin dasboard</p>
-    );
+const SetupPage = () => {
+  return (
+    <div>
+      this is page
+    </div>
+  )
 }
+
+export default SetupPage
+
+
+
     
