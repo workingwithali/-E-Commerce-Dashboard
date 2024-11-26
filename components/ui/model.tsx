@@ -1,5 +1,7 @@
 "use client"
 
+import { Dialog } from "./dialog";
+
 
 
 interefacec ModalProps{
@@ -20,5 +22,10 @@ export const Modal: React.Fc<ModalProps>=({
         if(!open){
             onClose();
         }
-    }
+    };
+    return (
+        <Dialog>
+            
+        </Dialog>
+    )
 }
