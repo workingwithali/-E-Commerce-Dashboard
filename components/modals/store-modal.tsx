@@ -5,7 +5,7 @@ import { Modal } from '@/components/ui/modal';
 import * as z from 'zod'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Form } from '@/components/ui/form';
+import { Form, FormField } from '@/components/ui/form';
 
 const formSchema  = z.object({
     name: z.string().min(1),
@@ -35,7 +35,16 @@ export const StoreModal = () => {
             {/* Content inside the modal */}
             <div>
                 <div className='space-y-4 py-2 pb-4'>
-                    <Form>
+                    <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)}>
+                            <FormField
+                            control={form.control}
+                            name="name"
+                            render={({ field })=>()}
+                            />
+
+                            
+                        </form>
 
                     </Form>
                 </div>
