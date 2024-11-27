@@ -11,7 +11,7 @@ export const ModalProvider = () => {
     }, []); 
 
     if (!isMount) {
-        return null; // Render nothing until the component is mounted
+        return null; 
     }
 
     return (
