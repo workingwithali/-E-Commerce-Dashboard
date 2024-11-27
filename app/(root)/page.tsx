@@ -1,5 +1,5 @@
 "use client"
-import { Modal } from "@/components/ui/model"
+import { Modal } from "@/components/ui/modal"
 
 
 const SetupPage = () => {
