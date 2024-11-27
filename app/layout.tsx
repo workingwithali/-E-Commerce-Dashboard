@@ -27,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body>
+      <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`} >
+        <body className={geistSans.className}>
           <header>
             <SignedOut>
               <SignInButton />
@@ -38,9 +38,9 @@ export default function RootLayout({
             </SignedIn>
           </header>
           <main>
-            <ModalProvider/>
+            <ModalProvider />
             {children}
-            </main>
+          </main>
         </body>
       </html>
     </ClerkProvider>
