@@ -4,7 +4,7 @@ import { StoreModal } from "@/components/modals/store-modal";
 import { useState, useEffect } from "react";
 
 export const ModalProvider = () => {
-    const [isMount, setIsMount] = useState(false); // Fixed destructuring
+    const [isMount, setIsMount] = useState(false); 
 
     useEffect(() => {
         setIsMount(true);
