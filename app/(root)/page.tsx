@@ -16,7 +16,7 @@ const SetupPage = () => {
   
   return (
     <div>
-      <Modal title="Info" description="Details" isOpen={true} onClose={() => { }}>
+      <Modal title="Info" description="Details" isOpen onClose={() => { }}>
         <p>This is extra content!</p>
       </Modal>
     </div>
